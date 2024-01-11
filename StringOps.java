@@ -1,17 +1,18 @@
 public class StringOps {
     public static void main(String[] args)
      {   
-        String str = "MMMM"; 
-        char ch = 'M'; 
+        //String str = "MMMM"; 
+        //char ch = 'M'; 
         //String strtest = "  Intro to coMPuter  sCIEnce"; 
-        //System.out.println(capVowelsLowRest(strtest)); 
+        String strtest = "One two tHRee world";
+        System.out.println(capVowelsLowRest(strtest)); 
         //System.out.println(camelCase(strtest));
-        int [] arrTEST = allIndexOf(str,ch);
-        int length = arrTEST.length; 
-        for (int i=0; i < length; i++)
-        {
-            System.out.print(arrTEST[i] );
-        }
+        //int [] arrTEST = allIndexOf(str,ch);
+        //int length = arrTEST.length; 
+        //for (int i=0; i < length; i++)
+        //{
+           // System.out.print(arrTEST[i] );
+       // }
 
         
 
@@ -33,7 +34,8 @@ public class StringOps {
             }
             else 
             {
-                if ( str.charAt(counter) > 64 && str.charAt(counter) < 91)
+                if ( str.charAt(counter) > 64 && str.charAt(counter) < 91 && str.charAt(counter) != 'E' && str.charAt(counter) != 'A' 
+                && str.charAt(counter) != 'I' && str.charAt(counter) != 'O' && str.charAt(counter) != 'U')
                 {
                      strNew =  strNew +  (char)(str.charAt(counter) + 32); 
                 }
